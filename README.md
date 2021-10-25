@@ -15,6 +15,41 @@ pip install Domain-Extract
 
 ---
 
+## Usage
+
+```py
+import domain_extract
+```
+
+### Extract domain from url
+
+```py
+url = "https://fayas.me/"
+
+print(domain(url))
+```
+Response :- `fayas.me`
+
+### Extract domains from urls list
+
+```py
+urls = ["https://fayas.me", "https://github.com/FayasNoushad"]
+
+print(domains(urls))
+```
+Response :- `["fayas.me", "github.com"]`
+
+### Extract domains from a string
+
+```py
+string = "Hello [Fayas](https://fayas.me/)"
+
+print(string_domains(string))
+```
+Response :- `["fayas.me"]`
+
+---
+
 ## Credits
 
 - [Fayas Noushad](https://github.com/FayasNoushad)
