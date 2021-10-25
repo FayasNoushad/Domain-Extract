@@ -26,7 +26,7 @@ import domain_extract
 ```py
 url = "https://fayas.me/"
 
-print(domain(url))
+print(domain_extract.domain(url))
 ```
 Response :- `fayas.me`
 
@@ -35,7 +35,7 @@ Response :- `fayas.me`
 ```py
 urls = ["https://fayas.me", "https://github.com/FayasNoushad"]
 
-print(domains(urls))
+print(domain_extract.domains(urls))
 ```
 Response :- `["fayas.me", "github.com"]`
 
@@ -44,7 +44,7 @@ Response :- `["fayas.me", "github.com"]`
 ```py
 string = "Hello [Fayas](https://fayas.me/)"
 
-print(string_domains(string))
+print(domain_extract.string_domains(string))
 ```
 Response :- `["fayas.me"]`
 
