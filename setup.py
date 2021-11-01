@@ -11,13 +11,17 @@ def requirements(file="requirements.txt") -> list:
         return []
 
 
-file = pathlib.Path(__file__).parent
+def readme(file="README.md"):
+    if os.path.isfile(file):
+        with open(file, encoding="utf8") as r:
+            return r.read()
+    else:
+        return ""
 
-README = (file / "README.md").read_text()
 
 setup(
     name="Domain-Extract",
-    version="1.0.2",
+    version="1.0.3",
     author="FayasNoushad",
     long_description=README,
     long_description_content_type="text/markdown",
