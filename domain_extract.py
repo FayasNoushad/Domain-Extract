@@ -2,7 +2,10 @@ import string_extract
 
 
 def domain(url):
-    domain = url.split("://", 1)[-1].split("/", 1)[0]
+    if url.startswith("http://") or url.startswith("https://"):
+        domain = url.split("://", 1)[-1].split("/", 1)[0]
+    else:
+        domain = ""
     return domain
 
 
