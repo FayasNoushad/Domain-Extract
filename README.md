@@ -1,19 +1,12 @@
-```
-Made with Python3
-(C) @FayasNoushad
-Copyright permission under MIT License
-License -> https://github.com/FayasNoushad/Domain-Extract/blob/main/LICENSE
-```
+# Domain Extract
 
----
+Domain extract from url or urls or string
 
 ## Installation
 
 ```
 pip install Domain-Extract
 ```
-
----
 
 ## Usage
 
@@ -24,37 +17,29 @@ import domain_extract
 ### Extract domain from url
 
 ```py
-url = "https://fayas.me/"
+url = "https://github.com/FayasNoushad"
 
 print(domain_extract.domain(url))
-# => fayas.me
+# => github.com
 ```
 
 ### Extract domains from urls list
 
 ```py
 urls = [
-    "https://fayas.me",
+    "https://twitter.com/FayasNoushad",
     "https://github.com/FayasNoushad"
 ]
 
 print(domain_extract.domains(urls))
-# => ["fayas.me", "github.com"]
+# => ["twitter.com", "github.com"]
 ```
 
 ### Extract domains from a string
 
 ```py
-string = "Hello [Fayas](https://fayas.me/)"
+string = "Hello [Fayas](https://github.com/FayasNoushad)"
 
 print(domain_extract.string_domains(string))
-# => ["fayas.me"]
+# => ["github.com"]
 ```
-
----
-
-## Credits
-
-- [Fayas Noushad](https://github.com/FayasNoushad)
-
----
