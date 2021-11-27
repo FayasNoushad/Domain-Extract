@@ -20,15 +20,12 @@ def readme(file="README.md"):
 
 setuptools.setup(
     name="Domain-Extract",
-    version="1.0.5",
+    version="1.0.6",
     description="Domain extract from string",
     long_description=readme(),
     long_description_content_type="text/markdown",
-    url="https://github.com/FayasNoushad/",
-    download_url="https://github.com/FayasNoushad/Domain-Extract/releases/latest",
     license="MIT",
     author="Fayas Noushad",
-    author_email="contact@fayas.me",
     classifiers=[
         "Intended Audience :: Developers",
         "Natural Language :: English",
@@ -38,10 +35,10 @@ setuptools.setup(
     ],
     project_urls={
         "Tracker": "https://github.com/FayasNoushad/Domain-Extract/issues",
-        "Source": "https://github.com/FayasNoushad/Domain-Extract",
-        "Documentation": "https://domain-extract.projects.fayas.me",
+        "Source": "https://github.com/FayasNoushad/Domain-Extract"
     },
     python_requires=">=3.6",
+    py_modules=['domain_extract'],
     packages=setuptools.find_packages(),
     zip_safe=False,
     install_requires=requirements()
