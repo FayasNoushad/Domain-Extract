@@ -17,5 +17,5 @@ def domains(urls):
 
 
 def string_domains(string):
-    urls = string_extract.urls(string)
+    urls = string_extract.links(string)
     return domains(urls)
